@@ -156,7 +156,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-8"
             >
-              <Button size="lg" className="w-full sm:w-auto gap-2 rounded-full" onClick={() => window.open('/resume.pdf', '_blank')}>
+              <Button size="lg" className="w-full sm:w-auto gap-2 rounded-full" onClick={() => window.open(`${import.meta.env.BASE_URL}resume.pdf`, '_blank')}>
                 <Download className="w-4 h-4" /> Download Resume
               </Button>
               <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2 rounded-full" onClick={() => scrollTo('projects')}>
