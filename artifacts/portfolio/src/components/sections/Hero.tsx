@@ -134,11 +134,11 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="h-8 md:h-12 mb-6 font-mono text-lg md:text-2xl text-muted-foreground flex items-center justify-center lg:justify-start"
+              className="min-h-[2rem] md:min-h-[3rem] mb-6 font-mono text-base md:text-2xl text-muted-foreground flex items-center justify-center lg:justify-start flex-wrap gap-x-1"
             >
-              <span className="mr-2">&gt;</span>
-              <span className="text-foreground">{typingText}</span>
-              <span className="animate-pulse ml-1 w-2 h-6 md:h-8 bg-primary"></span>
+              <span>&gt;</span>
+              <span className="text-foreground break-words max-w-full">{typingText}</span>
+              <span className="animate-pulse w-2 h-5 md:h-8 bg-primary shrink-0"></span>
             </motion.div>
 
             <motion.p 

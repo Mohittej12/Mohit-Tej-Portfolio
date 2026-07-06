@@ -175,7 +175,7 @@ function SplashScreen({ onComplete }: { onComplete: () => void }) {
           initial={{ y: 20, opacity: 0 }}
           animate={phase !== "in" ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="font-serif text-3xl md:text-5xl font-bold tracking-tight text-white text-center"
+          className="font-serif text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-white text-center px-4"
         >
           Gowrabathuni{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
@@ -187,7 +187,7 @@ function SplashScreen({ onComplete }: { onComplete: () => void }) {
           initial={{ y: 10, opacity: 0 }}
           animate={phase !== "in" ? { y: 0, opacity: 1 } : { y: 10, opacity: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-3 font-mono text-sm text-primary/80 tracking-widest uppercase"
+          className="mt-3 font-mono text-[10px] sm:text-sm text-primary/80 tracking-normal sm:tracking-widest uppercase text-center px-4 leading-snug"
         >
           Software Engineer · AI Builder · Full Stack
         </motion.p>

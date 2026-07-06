@@ -58,7 +58,7 @@ export function Footer() {
             variant="ghost" 
             size="icon" 
             onClick={scrollToTop}
-            className="rounded-full hidden md:flex hover:bg-primary/10 hover:text-primary"
+            className="rounded-full flex hover:bg-primary/10 hover:text-primary border border-border/50"
           >
             <ArrowUp className="w-4 h-4" />
           </Button>

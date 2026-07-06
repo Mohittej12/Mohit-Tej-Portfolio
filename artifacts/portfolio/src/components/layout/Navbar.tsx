@@ -151,25 +151,25 @@ export function Navbar() {
                     initial={{ opacity: 0, x: 60 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 60 }}
-                    transition={{ duration: 0.4, delay: i * 0.06, ease: "easeOut" }}
+                    transition={{ duration: 0.4, delay: i * 0.05, ease: "easeOut" }}
                   >
                     <button
                       onClick={() => scrollToSection(link.href)}
                       data-testid={`nav-link-${link.href}`}
-                      className={`group w-full flex items-center gap-6 py-4 border-b border-border/30 last:border-0 hover:pl-4 transition-all duration-300 ${
+                      className={`group w-full flex items-center gap-4 py-3 sm:py-4 border-b border-border/30 last:border-0 hover:pl-3 transition-all duration-300 ${
                         activeSection === link.href ? "text-primary" : "text-foreground hover:text-primary"
                       }`}
                     >
                       <span className="font-mono text-xs text-muted-foreground group-hover:text-primary transition-colors w-6 shrink-0">
                         {link.num}
                       </span>
-                      <span className="font-serif text-3xl md:text-4xl font-bold tracking-tight">
+                      <span className="font-serif text-xl sm:text-3xl md:text-4xl font-bold tracking-tight text-left">
                         {link.name}
                       </span>
                       {activeSection === link.href && (
                         <motion.div
                           layoutId="menu-active"
-                          className="ml-auto w-2 h-2 rounded-full bg-primary"
+                          className="ml-auto w-2 h-2 rounded-full bg-primary shrink-0"
                         />
                       )}
                     </button>
