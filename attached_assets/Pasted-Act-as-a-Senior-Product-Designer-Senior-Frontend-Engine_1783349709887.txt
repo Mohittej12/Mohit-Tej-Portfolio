@@ -1,0 +1,704 @@
+Act as a Senior Product Designer, Senior Frontend Engineer, UI/UX Designer, Motion Designer, and Software Architect.
+
+Your goal is to build a world-class personal portfolio website that looks like it belongs to a Software Engineer working at Microsoft, Google, Atlassian, Stripe, OpenAI, or Vercel.
+
+This should NOT look like a template.
+
+It should feel premium, modern, elegant, responsive, animated, extremely fast, recruiter-friendly, and memorable.
+
+==========================================================
+TECH STACK
+==========================================================
+
+Use:
+
+• React 19
+• TypeScript
+• Vite
+• Tailwind CSS
+• Framer Motion
+• GSAP (only where appropriate)
+• React Icons
+• Lenis Smooth Scrolling
+• Lucide Icons
+• EmailJS contact form
+• React Router
+• Responsive Design
+• Dark + Light Theme
+• Glassmorphism
+• Modern Gradients
+• Clean Component Architecture
+
+Follow best practices.
+
+SEO optimized.
+
+Lazy loading.
+
+Accessibility.
+
+Performance optimized.
+
+90+ Lighthouse.
+
+==========================================================
+COLOR PALETTE
+==========================================================
+
+Premium Dark Theme
+
+Background:
+#0B0F19
+
+Cards:
+#121826
+
+Primary:
+#4F8CFF
+
+Secondary:
+#8B5CF6
+
+Accent:
+#00E5FF
+
+Success:
+#22C55E
+
+Text:
+#F8FAFC
+
+Muted:
+#94A3B8
+
+==========================================================
+TYPOGRAPHY
+==========================================================
+
+Use:
+
+Inter
+
+Space Grotesk
+
+JetBrains Mono
+
+Beautiful typography hierarchy.
+
+==========================================================
+WEBSITE STRUCTURE
+==========================================================
+
+Sticky animated navbar
+
+Sections:
+
+Hero
+
+About
+
+Experience
+
+Skills
+
+Projects
+
+Research
+
+Certifications
+
+Achievements
+
+GitHub
+
+Contact
+
+Footer
+
+Smooth scroll.
+
+Scroll spy.
+
+==========================================================
+HERO SECTION
+==========================================================
+
+Large animated introduction.
+
+Name:
+
+Gowrabathuni Mohit Tej
+
+Headline:
+
+Software Engineer
+Full Stack Developer
+AI Engineer
+Microsoft Power Platform Developer
+
+Animated typing effect.
+
+Professional profile image placeholder.
+
+CTA buttons:
+
+Download Resume
+
+View Projects
+
+Contact Me
+
+GitHub
+
+LinkedIn
+
+Background should have animated particles.
+
+Gradient blobs.
+
+Floating code snippets.
+
+Subtle mouse interaction.
+
+==========================================================
+ABOUT
+==========================================================
+
+Create an engaging About section.
+
+Mention:
+
+Computer Science Engineering graduate.
+
+Lead Software Engineering Intern at Prodapt.
+
+Software Developer.
+
+AI enthusiast.
+
+Full Stack Developer.
+
+Enterprise Automation.
+
+Microsoft Power Platform.
+
+Generative AI.
+
+Problem Solver.
+
+Mention passion for building scalable products.
+
+==========================================================
+EXPERIENCE
+==========================================================
+
+Timeline layout.
+
+1.
+
+Lead Software Engineering Intern
+
+Prodapt
+
+Highlights:
+
+Led intern team
+
+Project planning
+
+Stakeholder communication
+
+Technical reviews
+
+Star Employee Award
+
+2.
+
+Software Developer Intern
+
+Prodapt
+
+Worked on:
+
+EasyDine
+
+ProDine
+
+Power Apps
+
+Power Automate
+
+React
+
+Flutter
+
+Firebase
+
+Enterprise applications
+
+REST APIs
+
+3.
+
+Deloitte Data Analytics Virtual Internship
+
+4.
+
+Deloitte Cyber Security Virtual Internship
+
+Animated timeline.
+
+==========================================================
+SKILLS
+==========================================================
+
+Beautiful categorized cards.
+
+Programming Languages
+
+Java
+
+Python
+
+C
+
+C++
+
+JavaScript
+
+SQL
+
+Dart
+
+Swift
+
+Frontend
+
+React
+
+HTML
+
+CSS
+
+Tailwind
+
+Flutter
+
+Backend
+
+Node.js
+
+Express.js
+
+Flask
+
+REST APIs
+
+Databases
+
+MongoDB
+
+MySQL
+
+Firebase
+
+Supabase
+
+DynamoDB
+
+AI
+
+IBM Granite
+
+Watsonx AI
+
+Docling
+
+RAG
+
+TensorFlow
+
+TensorFlow Lite
+
+Machine Learning
+
+Deep Learning
+
+Microsoft
+
+Power Apps
+
+Power Automate
+
+Microsoft 365
+
+Developer Tools
+
+Git
+
+GitHub
+
+VS Code
+
+Android Studio
+
+Vercel
+
+Postman
+
+Analytics
+
+Excel
+
+Tableau
+
+==========================================================
+PROJECTS
+==========================================================
+
+Create premium project cards.
+
+Each project should have:
+
+Large image
+
+Description
+
+Technology chips
+
+GitHub button
+
+Live Demo button
+
+Hover animation
+
+Glass effect
+
+Featured ribbon where applicable.
+
+Projects:
+
+1.
+
+Build-an-AI-Powered-Document-Retrieval-System-with-IBM Granite and Docling
+
+Featured
+
+IBM Granite
+
+Watsonx
+
+Docling
+
+RAG
+
+Python
+
+GitHub:
+https://github.com/Mohittej12/Build-an-AI-Powered-Document-Retrieval-System-with-IBM-Granite-and-Docling
+
+2.
+
+TalentCRM
+
+React
+
+Node
+
+Express
+
+MongoDB
+
+Firebase
+
+GitHub:
+https://github.com/Mohittej12/TalentCRM---TalentXMinds
+
+3.
+
+Career Compass
+
+React
+
+Node
+
+MongoDB
+
+Firebase
+
+AI Career Guidance
+
+GitHub:
+https://github.com/Mohittej12/Career-Compass
+
+4.
+
+EasyDine
+
+React
+
+Firebase
+
+Restaurant Ordering
+
+GitHub:
+https://github.com/Mohittej12/easy-dine-fullapp
+
+Live:
+https://easy-dine-fullapp-easy-dine.vercel.app/
+
+5.
+
+ProDine
+
+Flutter
+
+Firebase
+
+Restaurant Mobile App
+
+GitHub:
+https://github.com/Mohittej12/ProDine-Mobile-App
+
+Live:
+https://mohittej12.github.io/ProDine-Mobile-App/
+
+6.
+
+BloodCellBuddy
+
+Healthcare AI
+
+CNN
+
+TensorFlow
+
+Java
+
+Swift
+
+Flask
+
+7.
+
+UroSmart
+
+Healthcare AI
+
+TensorFlow Lite
+
+Computer Vision
+
+==========================================================
+RESEARCH
+==========================================================
+
+Beautiful publication card.
+
+Deep Learning Scheme to Detect Steel Surface Condition
+
+Display ORCID.
+
+Conference:
+
+SILICON'25
+
+==========================================================
+CERTIFICATIONS
+==========================================================
+
+Interactive certification carousel.
+
+Include:
+
+CEH
+
+Oracle SQL
+
+Fractal - Generative AI for Developers
+
+Google AI Agents
+
+IBM Granite
+
+Coursera
+
+NPTEL
+
+Deloitte
+
+Tata
+
+Microsoft
+
+Google Analytics
+
+Google AI for App Building
+
+Display credential buttons.
+
+==========================================================
+ACHIEVEMENTS
+==========================================================
+
+Timeline/cards.
+
+Star Employee of the Month
+
+Outstanding Achievement Award
+
+Conference Presentations
+
+Leadership
+
+==========================================================
+GITHUB SECTION
+==========================================================
+
+Automatically fetch GitHub profile information using GitHub API.
+
+Display:
+
+Repositories
+
+Followers
+
+Following
+
+Contribution graph placeholder
+
+Languages
+
+Pinned repositories
+
+GitHub profile:
+
+https://github.com/Mohittej12
+
+==========================================================
+CONTACT
+==========================================================
+
+Professional contact form.
+
+EmailJS integration.
+
+Cards for:
+
+Email
+
+Phone
+
+LinkedIn
+
+GitHub
+
+Location
+
+Social icons.
+
+==========================================================
+FOOTER
+==========================================================
+
+Minimal.
+
+Copyright.
+
+Built with React + TypeScript + Tailwind.
+
+Back to Top button.
+
+==========================================================
+ANIMATIONS
+==========================================================
+
+Use Framer Motion everywhere.
+
+Page transitions.
+
+Fade.
+
+Slide.
+
+Scale.
+
+Text reveal.
+
+Scroll animations.
+
+Floating icons.
+
+Hover lift.
+
+Animated gradients.
+
+Animated blobs.
+
+Glowing borders.
+
+Project tilt effect.
+
+Mouse tracking.
+
+Parallax.
+
+Button ripple.
+
+Loading screen.
+
+Skeleton loading.
+
+==========================================================
+RESPONSIVENESS
+==========================================================
+
+Perfect on:
+
+Desktop
+
+Laptop
+
+Tablet
+
+Mobile
+
+No overflow.
+
+No layout shifts.
+
+==========================================================
+EXTRA FEATURES
+==========================================================
+
+Dark/Light toggle.
+
+Resume download.
+
+Scroll progress bar.
+
+Cursor glow.
+
+Animated background grid.
+
+Keyboard accessibility.
+
+SEO metadata.
+
+Open Graph.
+
+Favicon.
+
+404 page.
+
+Loading animation.
+
+==========================================================
+FINAL GOAL
+==========================================================
+
+The final website should look like a premium portfolio that impresses recruiters within the first 10 seconds.
+
+The overall design quality should be comparable to award-winning portfolios featured on Awwwards and modern developer portfolios built with React, while maintaining excellent performance, accessibility, and responsiveness.
+
+Do not use a generic template. Build a unique, polished, production-ready portfolio with reusable components, clean architecture, and maintainable code.
