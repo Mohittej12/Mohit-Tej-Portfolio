@@ -6,6 +6,7 @@ import type { Engine } from "@tsparticles/engine";
 import { Github, Linkedin, Download, ArrowRight, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTypingEffect } from "@/hooks/useTypingEffect";
+import profilePhoto from "@assets/WhatsApp_Image_2026-07-06_at_9.52.03_PM_1783354968789.jpeg";
 
 export function Hero() {
   const [init, setInit] = useState(false);
@@ -13,6 +14,7 @@ export function Hero() {
     "Software Engineer",
     "Full Stack Developer",
     "AI Engineer",
+    "Mobile App Developer (Android / iOS)",
     "Microsoft Power Platform Developer"
   ]);
 
@@ -192,8 +194,7 @@ export function Hero() {
               <div className="absolute inset-2 rounded-full border border-secondary/20 animate-[spin_15s_linear_infinite_reverse]"></div>
               
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/50 shadow-[0_0_50px_rgba(79,140,255,0.2)] bg-card flex items-center justify-center">
-                {/* Fallback avatar if no image */}
-                <span className="text-8xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-br from-primary to-secondary">MT</span>
+                <img src={profilePhoto} alt="Gowrabathuni Mohit Tej" className="w-full h-full object-cover object-top" />
               </div>
               
               {/* Orbiting tech pills */}

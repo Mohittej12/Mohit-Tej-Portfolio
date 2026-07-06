@@ -134,9 +134,9 @@ export function About() {
                 <CardContent className="p-6">
                   <Briefcase className="w-8 h-8 text-secondary mb-4" />
                   <div className="text-4xl font-bold font-serif mb-2 text-foreground flex items-center">
-                    <AnimatedCounter end={2} />+
+                    6mo
                   </div>
-                  <p className="text-sm text-muted-foreground">Years Experience</p>
+                  <p className="text-sm text-muted-foreground">Experience</p>
                 </CardContent>
               </Card>
             </motion.div>

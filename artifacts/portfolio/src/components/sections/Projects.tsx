@@ -9,7 +9,7 @@ const projects = [
     description: "AI-powered document Q&A system using IBM Granite, Docling, and Retrieval-Augmented Generation for enterprise knowledge discovery",
     tech: ["IBM Granite", "Watsonx", "Docling", "RAG", "Python"],
     github: "https://github.com/Mohittej12/Build-an-AI-Powered-Document-Retrieval-System-with-IBM-Granite-and-Docling",
-    live: null,
+    live: "https://colab.research.google.com/github/ibm-granite-community/granite-snack-cookbook/blob/main/recipes/RAG/Granite_Docling_RAG.ipynb#scrollTo=F5u06aEjThd3",
     featured: true
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     description: "Full-stack recruitment management platform with secure auth, RBAC, candidate tracking, and job management",
     tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/Mohittej12/TalentCRM---TalentXMinds",
-    live: null,
+    live: "https://talent-crm-talent-x-minds.vercel.app/",
     featured: false
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     description: "AI-powered career guidance platform with intelligent job matching and personalized recommendations",
     tech: ["React", "Node.js", "MongoDB", "AI"],
     github: "https://github.com/Mohittej12/Career-Compass",
-    live: null,
+    live: "https://career-compass-avh1.onrender.com/",
     featured: false
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     description: "AI-powered urological health analysis with on-device inference, disease prediction, and automated reporting",
     tech: ["TensorFlow Lite", "Computer Vision", "Deep Learning"],
     github: null,
-    live: null,
+    live: "https://apps.apple.com/in/app/simats-urosmart/id6761048994",
     featured: false
   }
 ];
