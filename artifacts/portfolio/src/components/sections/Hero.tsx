@@ -41,7 +41,7 @@ export function Hero() {
       links: {
         color: "#8B5CF6",
         distance: 150,
-        enable: true,
+        enable: false,
         opacity: 0.1,
         width: 1,
       },
@@ -58,7 +58,7 @@ export function Hero() {
       shape: { type: "circle" },
       size: { value: { min: 1, max: 3 } },
     },
-    detectRetina: true,
+    detectRetina: false,
   } as any;
 
   const scrollTo = (id: string) => {
@@ -82,8 +82,8 @@ export function Hero() {
       )}
 
       {/* Gradient Blobs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px] animate-pulse pointer-events-none -z-10 mix-blend-screen" style={{ animationDuration: '8s' }}></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[128px] animate-pulse pointer-events-none -z-10 mix-blend-screen" style={{ animationDuration: '12s', animationDelay: '2s' }}></div>
+      <div className="absolute top-1/4 left-1/4 w-72 h-72 lg:w-96 lg:h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 lg:w-96 lg:h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
       {/* Floating Code Snippets */}
       {codeSnippets.map((snippet, i) => (
