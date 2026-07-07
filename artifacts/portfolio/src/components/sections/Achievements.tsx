@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import starAwardCert from "@assets/star_award.png";
+import outstandingAwardCert from "@assets/outstanding_award.png";
 
 const achievements = [
   {
@@ -23,7 +24,8 @@ const achievements = [
     icon: <Trophy className="w-6 h-6" />,
     color: "text-amber-500",
     bg: "bg-amber-500/10",
-    border: "border-amber-500/20"
+    border: "border-amber-500/20",
+    certificate: outstandingAwardCert,
   },
   {
     title: "Research Publication",
