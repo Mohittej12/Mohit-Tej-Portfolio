@@ -27,7 +27,7 @@ export function Hero() {
   const particlesOptions = {
     fullScreen: { enable: false },
     background: { color: { value: "transparent" } },
-    fpsLimit: 120,
+    fpsLimit: 60,
     interactivity: {
       events: {
         onHover: { enable: true, mode: "grab" },
@@ -80,7 +80,7 @@ export function Hero() {
           <Particles id="tsparticles" options={particlesOptions} className="h-full w-full" />
         </div>
       )}
-      
+
       {/* Gradient Blobs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px] animate-pulse pointer-events-none -z-10 mix-blend-screen" style={{ animationDuration: '8s' }}></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[128px] animate-pulse pointer-events-none -z-10 mix-blend-screen" style={{ animationDuration: '12s', animationDelay: '2s' }}></div>
@@ -91,9 +91,9 @@ export function Hero() {
           key={i}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 0.3, y: [0, -15, 0] }}
-          transition={{ 
+          transition={{
             opacity: { duration: 1, delay: snippet.delay },
-            y: { duration: 6, repeat: Infinity, ease: "easeInOut", delay: snippet.delay } 
+            y: { duration: 6, repeat: Infinity, ease: "easeInOut", delay: snippet.delay }
           }}
           className="absolute hidden lg:flex items-center gap-2 font-mono text-sm text-primary/50 pointer-events-none select-none"
           style={{ top: snippet.top, left: snippet.left }}
@@ -105,7 +105,7 @@ export function Hero() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          
+
           <div className="flex-1 text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -120,7 +120,7 @@ export function Hero() {
               <span className="text-muted-foreground font-medium">Available for opportunities</span>
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -130,7 +130,7 @@ export function Hero() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Mohit Tej</span>
             </motion.h1>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -141,7 +141,7 @@ export function Hero() {
               <span className="animate-pulse w-2 h-5 md:h-8 bg-primary shrink-0"></span>
             </motion.div>
 
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -150,7 +150,7 @@ export function Hero() {
               Building scalable systems that matter. Engineering sophisticated AI integrations, robust enterprise platforms, and cross-platform experiences.
             </motion.p>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -167,7 +167,7 @@ export function Hero() {
               </Button>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
@@ -182,7 +182,7 @@ export function Hero() {
             </motion.div>
           </div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, type: "spring" }}
@@ -192,13 +192,13 @@ export function Hero() {
               {/* Outer glowing ring */}
               <div className="absolute inset-0 rounded-full border border-primary/30 animate-[spin_20s_linear_infinite]"></div>
               <div className="absolute inset-2 rounded-full border border-secondary/20 animate-[spin_15s_linear_infinite_reverse]"></div>
-              
+
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/50 shadow-[0_0_50px_rgba(79,140,255,0.2)] bg-card flex items-center justify-center">
                 <img src={profilePhoto} alt="Gowrabathuni Mohit Tej" className="w-full h-full object-cover object-top" />
               </div>
-              
+
               {/* Orbiting tech pills */}
-              <motion.div 
+              <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 className="absolute inset-[-20px] rounded-full"
@@ -210,12 +210,12 @@ export function Hero() {
               </motion.div>
             </div>
           </motion.div>
-          
+
         </div>
       </div>
-      
+
       {/* Scroll indicator */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
@@ -224,7 +224,7 @@ export function Hero() {
       >
         <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest">Scroll</span>
         <div className="w-[1px] h-12 bg-border relative overflow-hidden">
-          <motion.div 
+          <motion.div
             className="absolute top-0 left-0 w-full h-1/2 bg-primary"
             animate={{ top: ["-50%", "100%"] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}

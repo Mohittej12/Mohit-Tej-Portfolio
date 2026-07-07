@@ -10,20 +10,20 @@ import { Certifications } from "@/components/sections/Certifications";
 import { Achievements } from "@/components/sections/Achievements";
 import { GitHub } from "@/components/sections/GitHub";
 import { Contact } from "@/components/sections/Contact";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const FOUNTAIN_STREAMS = Array.from({ length: 18 }, (_, i) => ({
+const FOUNTAIN_STREAMS = Array.from({ length: 8 }, (_, i) => ({
   id: i,
-  angle: (i / 18) * 360,
-  delay: i * 0.08,
+  angle: (i / 8) * 360,
+  delay: i * 0.1,
   height: 120 + Math.random() * 200,
   width: 2 + Math.random() * 3,
   duration: 1.2 + Math.random() * 0.8,
   color: i % 3 === 0 ? "#4F8CFF" : i % 3 === 1 ? "#8B5CF6" : "#00E5FF",
 }));
 
-const DROPS = Array.from({ length: 60 }, (_, i) => ({
+const DROPS = Array.from({ length: 20 }, (_, i) => ({
   id: i,
   x: Math.random() * 100,
   delay: 0.5 + Math.random() * 3,
@@ -51,7 +51,7 @@ function SplashScreen({ onComplete }: { onComplete: () => void }) {
       style={{ background: "#0B0F19" }}
     >
       {/* Stars background */}
-      {Array.from({ length: 80 }).map((_, i) => (
+      {Array.from({ length: 30 }).map((_, i) => (
         <motion.div
           key={`star-${i}`}
           className="absolute rounded-full bg-white"
@@ -114,7 +114,7 @@ function SplashScreen({ onComplete }: { onComplete: () => void }) {
             width: drop.size,
             height: drop.size,
             background: drop.color,
-            boxShadow: `0 0 ${drop.size * 2}px ${drop.color}88`,
+            boxShadow: `0 0 ${drop.size}px ${drop.color}88`,
           }}
           animate={
             phase === "hold"
@@ -213,11 +213,12 @@ function SplashScreen({ onComplete }: { onComplete: () => void }) {
 
 export function Home() {
   const [loading, setLoading] = useState(true);
+  const handleComplete = useCallback(() => setLoading(false), []);
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <AnimatePresence>
-        {loading && <SplashScreen onComplete={() => setLoading(false)} />}
+        {loading && <SplashScreen onComplete={handleComplete} />}
       </AnimatePresence>
 
       <Navbar />
