@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
-import { Star, Trophy, Beaker, Users, GraduationCap } from "lucide-react";
+import { Star, Trophy, Beaker, Users, GraduationCap, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import starAwardCert from "@assets/star_award.png";
 
 const achievements = [
   {
@@ -10,7 +13,8 @@ const achievements = [
     icon: <Star className="w-6 h-6" />,
     color: "text-yellow-500",
     bg: "bg-yellow-500/10",
-    border: "border-yellow-500/20"
+    border: "border-yellow-500/20",
+    certificate: starAwardCert,
   },
   {
     title: "Outstanding Achievement Award 2025",
@@ -54,7 +58,7 @@ export function Achievements() {
   return (
     <section id="achievements" className="py-24 relative">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -84,7 +88,19 @@ export function Achievements() {
                     <div>
                       <h3 className="font-serif font-bold text-xl mb-1">{item.title}</h3>
                       <p className="text-foreground font-medium mb-1">{item.organization}</p>
-                      <p className="text-muted-foreground text-sm">{item.description}</p>
+                      <p className="text-muted-foreground text-sm mb-3">{item.description}</p>
+                      {item.certificate && (
+                        <Dialog>
+                          <DialogTrigger asChild>
+                            <Button variant="outline" size="sm" className="h-8 gap-2 text-xs">
+                              <ExternalLink className="w-3 h-3" /> View Certificate
+                            </Button>
+                          </DialogTrigger>
+                          <DialogContent className="max-w-4xl p-1 bg-card border-border overflow-hidden">
+                            <img src={item.certificate} alt={`${item.title} Certificate`} className="w-full h-auto rounded-md" />
+                          </DialogContent>
+                        </Dialog>
+                      )}
                     </div>
                   </div>
                 </CardContent>
