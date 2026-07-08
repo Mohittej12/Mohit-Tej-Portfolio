@@ -48,15 +48,15 @@ const projects = [
     title: "BloodCellBuddy",
     description: "AI mobile app for automated white blood cell classification using CNN trained on 10,000+ blood cell images",
     tech: ["TensorFlow", "Java", "Swift", "Flask"],
-    github: null,
-    live: null,
+    github: "https://github.com/Mohittej12/BloodCelBuddy",
+    live: "https://play.google.com/store/apps/details?id=com.simats.bloodcelbuddy",
     featured: false
   },
   {
     title: "UroSmart",
     description: "AI-powered urological health analysis with on-device inference, disease prediction, and automated reporting",
     tech: ["TensorFlow Lite", "Computer Vision", "Deep Learning"],
-    github: null,
+    github: "https://github.com/Mohittej12/new-urosmart",
     live: "https://apps.apple.com/in/app/simats-urosmart/id6761048994",
     featured: false
   }
@@ -66,7 +66,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-24 relative bg-muted/5">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -89,15 +89,15 @@ export function Projects() {
               className="h-full"
             >
               <Card className="h-full bg-card/80 backdrop-blur border-border hover:border-accent/50 hover:shadow-[0_8px_30px_rgba(0,229,255,0.1)] transition-all duration-300 group overflow-hidden flex flex-col relative [transform-style:preserve-3d] hover:[transform:translateY(-8px)]">
-                
+
                 {project.featured && (
                   <div className="absolute top-0 right-0 -mr-8 mt-2 w-32 text-center transform rotate-45 bg-accent text-accent-foreground text-xs font-bold py-1 z-10 shadow-md">
                     FEATURED
                   </div>
                 )}
-                
+
                 <CardContent className="p-6 flex-1 flex flex-col">
-                  
+
                   <div className="mb-4">
                     <h3 className="font-serif font-bold text-xl mb-2 group-hover:text-accent transition-colors">
                       {project.title}
@@ -106,19 +106,19 @@ export function Projects() {
                       {project.description}
                     </p>
                   </div>
-                  
+
                   <div className="mt-auto">
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.tech.map((tech) => (
-                        <span 
-                          key={tech} 
+                        <span
+                          key={tech}
                           className="text-xs font-mono px-2 py-1 rounded bg-muted/30 text-muted-foreground"
                         >
                           {tech}
                         </span>
                       ))}
                     </div>
-                    
+
                     <div className="flex items-center gap-3 pt-4 border-t border-border">
                       {project.github && (
                         <Button variant="ghost" size="sm" className="gap-2 text-muted-foreground hover:text-foreground" asChild>
