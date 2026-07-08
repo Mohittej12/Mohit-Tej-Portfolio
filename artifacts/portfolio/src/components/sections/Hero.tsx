@@ -203,10 +203,26 @@ export function Hero() {
                 transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 className="absolute inset-[-20px] rounded-full"
               >
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-card border border-border px-3 py-1 rounded-full text-xs font-mono shadow-lg">React</div>
-                <div className="absolute top-1/2 -right-4 -translate-y-1/2 bg-card border border-border px-3 py-1 rounded-full text-xs font-mono shadow-lg" style={{ transform: "translateY(-50%) rotate(-90deg)" }}>Node.js</div>
-                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card border border-border px-3 py-1 rounded-full text-xs font-mono shadow-lg" style={{ transform: "translateX(-50%) rotate(180deg)" }}>Python</div>
-                <div className="absolute top-1/2 -left-8 -translate-y-1/2 bg-card border border-border px-3 py-1 rounded-full text-xs font-mono shadow-lg" style={{ transform: "translateY(-50%) rotate(90deg)" }}>AI / ML</div>
+                {["React", "Node.js", "Python", "AI / ML", "Application Developer"].map((skill, i) => {
+                  const angle = (i * 360) / 5;
+                  const radian = (angle * Math.PI) / 180;
+                  // Center is 50%, 50%. Radius is ~50% of the slightly larger container.
+                  const x = 50 + 50 * Math.sin(radian);
+                  const y = 50 - 50 * Math.cos(radian);
+                  return (
+                    <div
+                      key={skill}
+                      className="absolute bg-card border border-border px-3 py-1 rounded-full text-xs font-mono shadow-lg whitespace-nowrap"
+                      style={{
+                        left: `${x}%`,
+                        top: `${y}%`,
+                        transform: `translate(-50%, -50%) rotate(${-angle}deg)`
+                      }}
+                    >
+                      {skill}
+                    </div>
+                  );
+                })}
               </motion.div>
             </div>
           </motion.div>
