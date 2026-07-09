@@ -229,12 +229,12 @@ export function Home() {
         <About />
         <Experience />
         <Skills />
-        <Services />
         <Projects />
         <Research />
         <Certifications />
         <Achievements />
         <GitHub />
+        <Services />
         <Contact />
       </main>
 

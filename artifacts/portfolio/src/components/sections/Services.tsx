@@ -119,10 +119,6 @@ export function Services() {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8 mb-24 max-w-7xl mx-auto justify-center">
                     {services.map((service, index) => {
                         const Icon = service.icon;
-                        // Center the last row if needed (5 cards total, 3 on first row, 2 centered on second row for xl screens)
-                        const isLastRow = index >= 3;
-                        const xlColSpan = isLastRow ? "xl:col-span-1" : "";
-                        const xlColStart = index === 3 ? "xl:col-start-1 xl:ml-[50%]" : index === 4 ? "xl:col-start-2 xl:-ml-[50%]" : "";
 
                         return (
                             <motion.div
@@ -131,7 +127,7 @@ export function Services() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                                className={`group relative rounded-[24px] bg-card/40 border border-white/10 backdrop-blur-xl p-8 hover:bg-card/60 transition-colors ${xlColSpan} ${xlColStart}`}
+                                className={`group relative rounded-[24px] bg-card/40 border border-white/10 backdrop-blur-xl p-8 hover:bg-card/60 transition-colors`}
                             >
                                 {/* Hover Gradient Border */}
                                 <div className="absolute inset-0 rounded-[24px] border-[1.5px] border-transparent bg-gradient-to-br from-blue-500/40 to-purple-500/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" style={{ WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)", WebkitMaskComposite: "xor", maskComposite: "exclude" }} />
