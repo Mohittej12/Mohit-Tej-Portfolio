@@ -66,7 +66,8 @@ export function Navbar() {
     setTimeout(() => {
       const element = document.getElementById(id);
       if (element) {
-        window.scrollTo({ top: element.offsetTop - 80, behavior: "smooth" });
+        const y = element.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: y, behavior: "smooth" });
       }
     }, 400);
   };
@@ -75,8 +76,8 @@ export function Navbar() {
     <>
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
-            ? "bg-background/85 backdrop-blur-xl border-b border-border/40 py-3"
-            : "bg-transparent py-5"
+          ? "bg-background/85 backdrop-blur-xl border-b border-border/40 py-3"
+          : "bg-transparent py-5"
           }`}
       >
         <div className="container mx-auto px-4 md:px-6">
