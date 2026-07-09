@@ -11,10 +11,11 @@ const navLinks = [
   { name: "Skills", href: "skills", num: "04" },
   { name: "Projects", href: "projects", num: "05" },
   { name: "Research", href: "research", num: "06" },
-  { name: "Certifications", href: "certifications", num: "07" },
-  { name: "Achievements", href: "achievements", num: "08" },
-  { name: "GitHub", href: "github", num: "09" },
-  { name: "Contact", href: "contact", num: "10" },
+  { name: "Conferences", href: "conferences", num: "07" },
+  { name: "Certifications", href: "certifications", num: "08" },
+  { name: "Achievements", href: "achievements", num: "09" },
+  { name: "GitHub", href: "github", num: "10" },
+  { name: "Contact", href: "contact", num: "11" },
 ];
 
 function HamburgerIcon({ isOpen }: { isOpen: boolean }) {
@@ -73,11 +74,10 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          isScrolled
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
             ? "bg-background/85 backdrop-blur-xl border-b border-border/40 py-3"
             : "bg-transparent py-5"
-        }`}
+          }`}
       >
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex items-center justify-between">
@@ -156,9 +156,8 @@ export function Navbar() {
                     <button
                       onClick={() => scrollToSection(link.href)}
                       data-testid={`nav-link-${link.href}`}
-                      className={`group w-full flex items-center gap-4 py-3 sm:py-4 border-b border-border/30 last:border-0 hover:pl-3 transition-all duration-300 ${
-                        activeSection === link.href ? "text-primary" : "text-foreground hover:text-primary"
-                      }`}
+                      className={`group w-full flex items-center gap-4 py-3 sm:py-4 border-b border-border/30 last:border-0 hover:pl-3 transition-all duration-300 ${activeSection === link.href ? "text-primary" : "text-foreground hover:text-primary"
+                        }`}
                     >
                       <span className="font-mono text-xs text-muted-foreground group-hover:text-primary transition-colors w-6 shrink-0">
                         {link.num}

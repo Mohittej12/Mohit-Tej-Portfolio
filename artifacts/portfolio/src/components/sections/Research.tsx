@@ -65,6 +65,7 @@ export function Research() {
 
         {/* Conferences Section */}
         <motion.div
+          id="conferences"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -227,6 +228,57 @@ export function Research() {
                         </DialogTrigger>
                         <DialogContent className="max-w-4xl p-1 bg-card border-border overflow-hidden">
                           <img src="/certificates/conference_cert_6.jpg" alt="GeoTag Certificate 6" className="w-full h-auto rounded-md" />
+                        </DialogContent>
+                      </Dialog>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur border-border hover:border-primary/50 transition-all duration-300 relative overflow-hidden group">
+              <div className="absolute top-0 left-0 w-1 h-full bg-primary group-hover:w-2 transition-all"></div>
+              <CardContent className="p-8 md:p-10">
+                <div className="flex flex-col md:flex-row gap-8 items-start md:items-center">
+                  <div className="p-4 rounded-2xl bg-primary/10 border border-primary/20 text-primary hidden md:block">
+                    <BookOpen className="w-10 h-10" />
+                  </div>
+
+                  <div className="flex-1 space-y-4">
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wider uppercase mb-2">
+                      <FileText className="w-3 h-3" />
+                      Paper Presentation
+                    </div>
+
+                    <h4 className="font-serif font-bold text-xl md:text-2xl leading-tight">
+                      National Conference SILICON'25 on CIPHER 6
+                    </h4>
+
+                    <div className="text-muted-foreground font-medium flex flex-col gap-2">
+                      <span>Dr. M.G.R. Educational and Research Institute, Chennai</span>
+                      <span className="text-sm">26th & 27th February 2025</span>
+                    </div>
+
+                    <div className="pt-4 flex flex-wrap items-center gap-4">
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button variant="outline" size="sm" className="gap-2 border-primary/30 hover:bg-primary/10 hover:text-primary">
+                            <ExternalLink className="w-4 h-4" /> View GeoTag Certificate 1
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-4xl p-1 bg-card border-border overflow-hidden">
+                          <img src="/certificates/conference_cert_7.jpg" alt="GeoTag Certificate 7" className="w-full h-auto rounded-md" />
+                        </DialogContent>
+                      </Dialog>
+
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button variant="outline" size="sm" className="gap-2 border-primary/30 hover:bg-primary/10 hover:text-primary">
+                            <ExternalLink className="w-4 h-4" /> View GeoTag Certificate 2
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-4xl p-1 bg-card border-border overflow-hidden">
+                          <img src="/certificates/conference_cert_8.jpg" alt="GeoTag Certificate 8" className="w-full h-auto rounded-md" />
                         </DialogContent>
                       </Dialog>
                     </div>
