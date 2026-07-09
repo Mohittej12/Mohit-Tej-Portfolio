@@ -82,7 +82,6 @@ export function Research() {
           viewport={{ once: true }}
         >
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-foreground">National Conferences</h3>
             <Card className="bg-card/50 backdrop-blur border-border hover:border-primary/50 transition-all duration-300 relative overflow-hidden group">
               <div className="absolute top-0 left-0 w-1 h-full bg-primary group-hover:w-2 transition-all"></div>
               <CardContent className="p-8 md:p-10">
