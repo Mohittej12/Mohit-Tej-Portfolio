@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
 import { Skills } from "@/components/sections/Skills";
+import { Services } from "@/components/sections/Services";
 import { Projects } from "@/components/sections/Projects";
 import { Research } from "@/components/sections/Research";
 import { Certifications } from "@/components/sections/Certifications";
@@ -90,8 +91,8 @@ function SplashScreen({ onComplete }: { onComplete: () => void }) {
                 phase === "in"
                   ? { scaleY: 1, x: targetX * 0.3, y: targetY * 0.3, opacity: 0.9 }
                   : phase === "hold"
-                  ? { scaleY: 1.2, x: targetX, y: targetY, opacity: 1 }
-                  : { scaleY: 0, x: 0, y: 0, opacity: 0 }
+                    ? { scaleY: 1.2, x: targetX, y: targetY, opacity: 1 }
+                    : { scaleY: 0, x: 0, y: 0, opacity: 0 }
               }
               transition={{
                 duration: stream.duration,
@@ -119,10 +120,10 @@ function SplashScreen({ onComplete }: { onComplete: () => void }) {
           animate={
             phase === "hold"
               ? {
-                  y: [0, -(200 + Math.random() * 200), 300],
-                  opacity: [0, 1, 0],
-                  scale: [0, 1, 0.5],
-                }
+                y: [0, -(200 + Math.random() * 200), 300],
+                opacity: [0, 1, 0],
+                scale: [0, 1, 0.5],
+              }
               : { opacity: 0 }
           }
           transition={{
@@ -142,8 +143,8 @@ function SplashScreen({ onComplete }: { onComplete: () => void }) {
           phase === "hold"
             ? { width: 400, height: 80, opacity: [0.4, 0.8, 0.4] }
             : phase === "in"
-            ? { width: 100, height: 30, opacity: 0.3 }
-            : { width: 0, height: 0, opacity: 0 }
+              ? { width: 100, height: 30, opacity: 0.3 }
+              : { width: 0, height: 0, opacity: 0 }
         }
         transition={{ duration: 1.5, ease: "easeOut" }}
       />
@@ -228,6 +229,7 @@ export function Home() {
         <About />
         <Experience />
         <Skills />
+        <Services />
         <Projects />
         <Research />
         <Certifications />

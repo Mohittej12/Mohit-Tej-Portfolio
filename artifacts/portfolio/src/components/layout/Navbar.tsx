@@ -9,13 +9,14 @@ const navLinks = [
   { name: "About", href: "about", num: "02" },
   { name: "Experience", href: "experience", num: "03" },
   { name: "Skills", href: "skills", num: "04" },
-  { name: "Projects", href: "projects", num: "05" },
-  { name: "Research", href: "research", num: "06" },
-  { name: "Conferences", href: "conferences", num: "07" },
-  { name: "Certifications", href: "certifications", num: "08" },
-  { name: "Achievements", href: "achievements", num: "09" },
-  { name: "GitHub", href: "github", num: "10" },
-  { name: "Contact", href: "contact", num: "11" },
+  { name: "Services", href: "services", num: "05" },
+  { name: "Projects", href: "projects", num: "06" },
+  { name: "Research", href: "research", num: "07" },
+  { name: "Conferences", href: "conferences", num: "08" },
+  { name: "Certifications", href: "certifications", num: "09" },
+  { name: "Achievements", href: "achievements", num: "10" },
+  { name: "GitHub", href: "github", num: "11" },
+  { name: "Contact", href: "contact", num: "12" },
 ];
 
 function HamburgerIcon({ isOpen }: { isOpen: boolean }) {
